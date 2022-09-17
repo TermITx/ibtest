@@ -1,0 +1,12 @@
+services:
+  app:
+    image: ibtestreg.azurecr.io/ibtestimage:v1
+    ports:
+      - "80:80"
+    restart: always
+  ibeam:
+    image: voyz/ibeam
+    restart: always
+    environment:
+      IBEAM_ACCOUNT: gazde0001 
+      IBEAM_PASSWORD: mala1jabukapaper
